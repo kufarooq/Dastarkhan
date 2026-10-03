@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karachi Restaurant</title>
+  <meta name="description" content="Karachi Restaurant: slow-cooked nihari, dum biryani and sizzling karahi in Sarai Alamgir.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,500;0,700;1,500;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Karachi Restaurant home">
+        <svg class="logo" viewBox="0 0 48 40" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="1.4">
+            <!-- K -->
+            <path d="M3 3v34M7 3v34M7 20L21 3M10 20L24 3M7 20l14 17M10 20l14 17"/>
+            <!-- R -->
+            <path d="M26 3v34M30 3v34M26 3h10a9 9 0 0 1 0 18h-6M30 7h6a5 5 0 0 1 0 10h-6M36 21l9 16M32 21l9 16"/>
+          </g>
+        </svg>
+        <span class="brand-name">Karachi <em>Restaurant</em></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Hours &amp; Location</a>
+        <a href="tel:+922100000000" class="btn btn-gold btn-sm">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Since 1998 · Sarai Alamgir</p>
+        <h1>The taste of Karachi,<br>served on one <span class="gold">dastarkhwan</span>.</h1>
+        <p class="hero-lede">Slow-cooked nihari, dum biryani and sizzling karahi — the flavours of Burns Road, made fresh every day for family and friends.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-gold">View the Menu</a>
+          <a href="#visit" class="btn btn-outline">Find Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient backdrop for the content sections -->
+    <div class="backdrop">
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Our story</p>
+            <h2 class="about-title">From a roadside grill to your family table</h2>
+          </div>
+          <div class="about-body">
+            <p class="about-lead">It started with one charcoal grill and a tray of seekh kababs beside the G.T. Road. Travellers stopped for a single kabab and stayed for a second, and soon the grill had a karahi next to it, then a pot of biryani, then a few tables under a tin roof.</p>
+            <p>Today that roadside grill is Karachi Restaurant, a family restaurant near Govt Girls College, but the routine has not changed. The coals are lit before noon, masalas are ground fresh every morning, and every karahi is cooked to order while you wait.</p>
+            <p>A <em>dastarkhwan</em> is the cloth spread for a shared meal, and that is still what we offer: generous plates, fair prices and a seat for everyone, whether you stop by for a quick plate of biryani or bring the whole family for dinner.</p>
+
+            <div class="stats">
+              <div class="stat"><strong>25+</strong><span>years of cooking</span></div>
+              <div class="stat"><strong>70</strong><span>dishes on the menu</span></div>
+              <div class="stat"><strong>120</strong><span>seats, family hall</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section id="menu" class="section menu">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Menu</p>
+            <h2>House favourites</h2>
+            <p class="section-note">All prices in Pakistani Rupees, inclusive of tax.</p>
+          </header>
+          <!-- Filled from js/menu.js -->
+          <div id="menu-root"></div>
+        </div>
+      </section>
+
+      <!-- Hours & Location -->
+      <section id="visit" class="section">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Visit us</p>
+            <h2 class="upright">Hours &amp; location</h2>
+          </header>
+
+          <div class="visit-grid">
+            <div class="panel">
+              <h3>Opening hours</h3>
+              <ul class="hours">
+                <li><span>Monday – Thursday</span><span>12:00 pm – 11:30 pm</span></li>
+                <li><span>Friday</span><span>2:00 pm – 12:30 am</span></li>
+                <li><span>Saturday – Sunday</span><span>12:00 pm – 12:30 am</span></li>
+              </ul>
+              <p class="small">Nihari served from 7:00 am on weekends.</p>
+            </div>
+
+            <div class="panel">
+              <h3>Find us</h3>
+              <address>
+                Near Govt Girls College<br>
+                Sarai Alamgir<br>
+                Pakistan
+              </address>
+              <p><a href="tel:+922100000000">+92 21 0000 0000</a></p>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+              <p class="small">Family hall and takeaway available. Free parking after 7 pm.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#top" class="brand brand-lg">
+        <svg class="logo" viewBox="0 0 48 40" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M3 3v34M7 3v34M7 20L21 3M10 20L24 3M7 20l14 17M10 20l14 17"/>
+            <path d="M26 3v34M30 3v34M26 3h10a9 9 0 0 1 0 18h-6M30 7h6a5 5 0 0 1 0 10h-6M36 21l9 16M32 21l9 16"/>
+          </g>
+        </svg>
+        <span class="brand-name">Karachi <em>Restaurant</em></span>
+      </a>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Hours &amp; Location</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="copyright">© <span id="year">2026</span> Karachi Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
