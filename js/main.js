@@ -50,4 +50,13 @@
   );
 })();
 
+// Use images/background.jpg behind the content sections if it exists
+(function photoBackground() {
+  const backdrop = document.querySelector(".backdrop");
+  if (!backdrop) return;
+  const img = new Image();
+  img.onload = () => backdrop.classList.add("has-photo");
+  img.src = "images/background.jpg";
+})();
+
 document.getElementById("year").textContent = new Date().getFullYear();

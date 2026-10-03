@@ -184,6 +184,16 @@ a { color: inherit; }
 }
 .backdrop > * { position: relative; z-index: 1; }
 
+/* Food photo background: switched on by js/main.js once images/background.jpg loads */
+.backdrop.has-photo {
+  background:
+    linear-gradient(rgba(20, 14, 10, 0.72), rgba(20, 14, 10, 0.72)),
+    url("../images/background.jpg") center / cover no-repeat;
+  background-attachment: fixed;
+}
+.backdrop.has-photo::before,
+.backdrop.has-photo::after { display: none; }
+
 .section { padding: 96px 0; }
 
 .section-head { text-align: center; margin-bottom: 40px; }
