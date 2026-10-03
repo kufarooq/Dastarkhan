@@ -1,18 +1,20 @@
 // Menu data. Each dish looks for a photo at images/menu/<id>.jpg
 // and shows a placeholder icon until that photo is added.
+// "img" points a dish at a photo elsewhere (these are free Unsplash photos);
+// delete it to use images/menu/<id>.jpg instead.
 // Set "from: true" for dishes whose price varies by size (shows "from Rs ...").
 const MENU = [
   {
     category: "Deals",
     icon: "🍽️",
     items: [
-      { id: "karahi-deal", name: "Karahi Deal", price: 1650, desc: "Half chicken karahi, fried rice, 5 roti, 1 litre cola, raita and salad." },
-      { id: "handi-boneless-deal", name: "Handi Boneless Deal", price: 1699, desc: "Half chicken handi, fried rice, 5 roti, 1 litre cola, raita and salad." },
-      { id: "ginger-deal", name: "Ginger Deal", price: 1050, desc: "Chicken ginger with 6 roti, raita and salad." },
-      { id: "jalfrezi-deal", name: "Jalfrezi Deal", price: 1050, desc: "Chicken jalfrezi with 6 roti, raita and salad." },
-      { id: "deal-6", name: "Deal 6", price: 2050, desc: "Half chicken karahi, fried rice, 2 kababs, 8 pcs tikka boti, 8 roti, raita and salad." },
-      { id: "deal-7", name: "Deal 7", price: 1380, desc: "Chicken qorma, fried rice, 1 kabab, 4 pcs tikka boti, 5 roti, raita and salad." },
-      { id: "deal-8", name: "Deal 8", price: 560, desc: "Chicken fried rice, 1 kabab, raita and salad." }
+      { id: "karahi-deal", img: "https://images.unsplash.com/photo-1708782340793-ec5f2159a689?w=400&h=300&fit=crop&q=75", name: "Karahi Deal", price: 1650, desc: "Half chicken karahi, fried rice, 5 roti, 1 litre cola, raita and salad." },
+      { id: "handi-boneless-deal", img: "https://images.unsplash.com/photo-1645432524603-2a5172479006?w=400&h=300&fit=crop&q=75", name: "Handi Boneless Deal", price: 1699, desc: "Half chicken handi, fried rice, 5 roti, 1 litre cola, raita and salad." },
+      { id: "ginger-deal", img: "https://images.unsplash.com/photo-1696950169364-173f61adbf95?w=400&h=300&fit=crop&q=75", name: "Ginger Deal", price: 1050, desc: "Chicken ginger with 6 roti, raita and salad." },
+      { id: "jalfrezi-deal", img: "https://images.unsplash.com/photo-1631292784640-2b24be784d5d?w=400&h=300&fit=crop&q=75", name: "Jalfrezi Deal", price: 1050, desc: "Chicken jalfrezi with 6 roti, raita and salad." },
+      { id: "deal-6", img: "https://images.unsplash.com/photo-1682862279256-b2a9e4f3d22c?w=400&h=300&fit=crop&q=75", name: "Deal 6", price: 2050, desc: "Half chicken karahi, fried rice, 2 kababs, 8 pcs tikka boti, 8 roti, raita and salad." },
+      { id: "deal-7", img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop&q=75", name: "Deal 7", price: 1380, desc: "Chicken qorma, fried rice, 1 kabab, 4 pcs tikka boti, 5 roti, raita and salad." },
+      { id: "deal-8", img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop&q=75", name: "Deal 8", price: 560, desc: "Chicken fried rice, 1 kabab, raita and salad." }
     ]
   },
   {

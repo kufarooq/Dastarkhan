@@ -12,7 +12,7 @@
         ${cat.items.map((d) => `
           <article class="dish">
             <div class="dish-img" data-icon="${cat.icon}">
-              <img src="images/menu/${d.id}.jpg" alt="${d.name}" loading="lazy">
+              <img src="${d.img || `images/menu/${d.id}.jpg`}" alt="${d.name}" loading="lazy">
             </div>
             <div>
               <h4>${d.name}</h4>
